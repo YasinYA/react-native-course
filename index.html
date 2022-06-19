@@ -53,7 +53,7 @@
 					<li><span>Week 1</span>
 						<ul>
 							<li>Introduction To React Native, ReactJS, Github</li>
-							<li>Enviornment Setup, React Native UI</li>
+							<li>Environment Setup, React Native UI</li>
 						</ul>
 					</li>
 					<li><span>Week 2</span>
@@ -258,6 +258,255 @@
 			</section>
 			<section data-auto-animate data-auto-animate-unmatched="fade">
 				<h3>Questions</h3>
+			</section>
+			<section data-auto-animate data-auto-animate-unmatched="fade">
+				<div>
+					<img src="../dist/images/logo.png" alt="" />
+				</div>
+				<p>Class 2</p>
+				<p>Environment Setup & React Native UI</p>
+			</section>
+			<section>
+				<section data-auto-animate>
+					<h4>Environment Setup</h4>
+					<p data-id="text-props">We need to have Nodejs & NPM installed. Lucky for us we did install that the
+						first class.</p>
+					<p> There are two way of setting up react native environment in general</p>
+					<ul>
+						<li>With Expo</li>
+						<li>With React native CLI (Commnad Line Interface</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h4>The easier one for beginners is to use Expo and focus on learning React Native.</h4>
+				</section>
+				<section data-auto-animate>
+					<h4>First thing you need to do is to install <b>expo-cli</b></h4>
+					<pre data-id="code">
+									<code data-line-numbers class="hljs" data-trim>
+										npm install -g expo-cli
+									</code>
+								</pre>
+				</section>
+				<section data-auto-animate>
+					<h4>Then create the project</h4>
+					<pre data-id="code">
+									<code data-line-numbers class="hljs" data-trim>
+										expo init {your project name}
+									</code>
+								</pre>
+				</section>
+				<section data-auto-animate>
+					<h4>After that all you need to do is to 'cd' in the folder and run the project.</h4>
+					<pre data-id="code">
+									<code data-line-numbers class="hljs" data-trim>
+										cd {your project name}
+										npm start # you can also use: expo start
+									</code>
+								</pre>
+				</section>
+				<section data-auto-animate>
+					<h4>What is next?</h4>
+					<p>Download Expo client on your phone.</p>
+				</section>
+
+				<section data-auto-animate>
+					<h4>Scan the Qr Code!</h4>
+				</section>
+			</section>
+			<section>
+				<section data-auto-animate>
+					<h4>React Native UI Elements</h4>
+					<p data-id="text-props">Let's Explain Some Core Elements in React Native</p>
+					<h3>Basics</h3>
+					<ul>
+						<li>
+							<h3>View</h3>
+							<pre data-id="code">
+								<code data-line-numbers class="hljs" data-trim><div></div></code>
+							</pre>
+
+						</li>
+						<li>
+							<h3>Text</h3>
+							<pre data-id="code">
+								<code data-line-numbers class="hljs" data-trim><p></p></code>
+							</pre>
+
+						</li>
+						<li>
+							<h3>TextInput</h3>
+							<pre data-id="code">
+								<code data-line-numbers class="hljs" data-trim><input type="text" /></code>
+							</pre>
+						</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h3>Lists</h3>
+					<ul>
+						<li>
+							<h3>ScrollView</h3>
+							<p>If you are building for the web scrolling when the you have long list or content is
+								automatic. but in the mobile apps its not. that why we use ScrollView.</p>
+							<p>ScrollView is very customizable but it renders everything inside of it at once so If
+								you
+								have a really long list this could be a performance Issue.</p>
+							<p>That's why you would wanna use The next element</p>
+						</li>
+						<li>
+							<h3>FlatList</h3>
+							<p>You pass in data prop and you create a component that defines how each item in your
+								data
+								is gonna look like.</p>
+							<p>There are alot of properties that let you customize how the list is rendered and we
+								will
+								see in the practical section.</p>
+						</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<ul>
+						<li>
+							<h3>SectionList</h3>
+							<p>SectionList is similar with Flatlist, but it is for a lists that are divided into
+								sections. liks a contact list</p>
+							<div class="border w-25 p-3">
+								<h3 class="px-5">A</h3>
+								<ul class="mb-3">
+									<li>
+										Ahmed
+									</li>
+									<li>
+										Asli
+									</li>
+								</ul>
+								<h3 class="px-5">B</h3>
+								<ul>
+									<li>
+										Bashir
+									</li>
+									<li>
+										Baxsan
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h3>Buttons</h3>
+					<ul>
+						<li>
+							<h3>TouchableHighlight</h3>
+							<p>Allow you to handle user touches.</p>
+							<p>When pressed the highlight gets dimer.</p>
+						</li>
+						<li>
+							<h3>TouchableOpacity</h3>
+							<p>Also for handling user touches.</p>
+							<p>When touched it decreases the opacity.</p>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li>
+							<h3>Pressable</h3>
+							<p>Also for handling user touches.</p>
+							<p>This is a new Element added and its the recommended one to use.</p>
+						</li>
+						<li>
+							<h3>Button</h3>
+							<p>Also for handling user touches.</p>
+							<p>This doesn't have much customization and its not ideal to use this.</p>
+						</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h3>Common</h3>
+					<ul>
+						<li>
+							<h3>StatusBar</h3>
+							<p>For customization of StatusBar</p>
+						</li>
+						<li>
+							<h3>ActivityIndicator</h3>
+							<p>For loading indication animation.</p>
+						</li>
+						<li>
+							<h3>Image</h3>
+							<p>For showing images</p>
+						</li>
+						<li>
+							<h3>ImageBackgournd</h3>
+							<p>For setting ImageBackgournds</p>
+							<p>It's background-image from css</p>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li>
+							<h3>KeyboardAvoidingView</h3>
+							<p>When the keyboard open in your phone it cover a larget area</p>
+							<p>So you need to adjust the View content to take that into account and move accordingly.
+							</p>
+							<p>This component helps your to solve that problem.</p>
+						</li>
+						<li>
+							<h3>Modal</h3>
+							<p>This is very basic limited component, and you probably will never use it.</p>
+							<p>Mostly people use the modal component that ships with the navigation library you are
+								using.</p>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li>
+							<h3>RefreshControl</h3>
+							<p>This is the "pull down from the top" functionality when you want to refresh the page</p>
+						</li>
+						<li>
+							<h3>SafeAreaView</h3>
+							<p>This put a border around your app.</p>
+							<p>To avoid things like the camera notch.</p>
+						</li>
+						<li>
+							<h3>Switch</h3>
+							<p>Just your basic switch element</p>
+						</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h3>Platform Specific</h3>
+					<ul>
+						<li>
+							<h3>DrawerLayoutAndroid</h3>
+							<p>Is a side that you can pull from the side.</p>
+							<p>Like the Modal component you normal use the one that ships with the navigation library
+								you use.</p>
+						</li>
+						<li>
+							<h3>TouchableNativeFeedback</h3>
+							<p>This is like other touchables we saw. Except that it has ripple effect animation in
+								andriod platform</p>
+						</li>
+						<li>
+							<h3>InputAccessoryView</h3>
+							<p>This is only for IOS. It enables you to put input above the keyboard when the user is
+								filling up an input.</p>
+							<p>things like emojis</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section data-auto-animate data-auto-animate-unmatched="fade">
+				<h3>Questions</h3>
+			</section>
+			<section>
+				<h3>Will Get into the practical.</h3>
 			</section>
 		</div>
 	</div>
